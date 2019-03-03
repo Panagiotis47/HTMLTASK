@@ -1,1 +1,23 @@
-﻿
+﻿body {
+    background: url("Background.jpg") no-repeat;
+    background-size: cover;
+    font-family: Georgia, serif;
+    background-attachment: fixed;
+}
+
+#Titlos1 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+#eikona1 {
+    display: block;
+    display: flex;
+    flex: 33.33%;
+    padding: 50px;
+}
+
+#paragrafos1 {
+    text-align: center;
+}
