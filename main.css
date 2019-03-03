@@ -21,3 +21,8 @@
 #paragrafos1 {
     text-align: center;
 }
+#Panos{
+	display: block;
+	display: flex;
+    
+    padding: 40px;
