@@ -34,10 +34,11 @@ header {
 
 #Titlos2 {
     text-align: center;
+	margin: 10px;
 }
 
 #Kouti {
-    margin-top: 20px; 
+    margin-top: 0px;
 }
 
 #Alex {
