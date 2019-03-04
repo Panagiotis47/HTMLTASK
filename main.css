@@ -37,8 +37,9 @@ header {
     float:left;
     padding:55px;
     text-align: center;
-    width:41%;
+    width:40%;
     border: black 3px solid;
+    margin-right: 10px;
 }
 
 #Panagiotis {
@@ -46,8 +47,9 @@ header {
     float:left;
     padding:55px;
     text-align: center;
-    width:41%;
+    width:40%;
     border: black 3px solid;
+    margin-left: 10px;
 }
 
 img.mikos {
@@ -75,11 +77,15 @@ footer {
     background: #38a02e;
     margin: 0px;
     border: #54528c 2px solid;
-    width: 100.3%;
+    width: 100.4%;
 }
 
 div.Periexomena {
     margin: 1%;
     padding: 1%;
+    
+}
+
+.hyperlink {
     
 }
