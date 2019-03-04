@@ -1,28 +1,85 @@
 ﻿body {
-    background: url("Background.jpg") no-repeat;
+    background: url("Eikones/Background.jpg") no-repeat;
     background-size: cover;
     font-family: Georgia, serif;
-    background-attachment: fixed;
+    margin: 0%;
+    padding: 0%;
+    
 }
 
 #Titlos1 {
     font-size: 40px;
     text-align: center;
+    padding-bottom: 20px;
     
-}
-
-#eikona1 {
-    display: block;
-    display: flex;
-    flex: 33.33%;
-    padding: 50px;
 }
 
 #paragrafos1 {
     text-align: center;
 }
-#Panos{
-	display: block;
-	display: flex;
+
+header {
+   background-color: #292d33;
+   padding-top: 20px;
+   height: border-box;
+}
+
+#Titlos2 {
+    text-align: center;
+}
+
+#Kouti {
+    margin-top: 20px; 
+}
+
+#Alex {
+    background: url("Eikones/wood.jpg") no-repeat;
+    float:left;
+    padding:55px;
+    text-align: center;
+    width:41%;
+    border: black 3px solid;
+}
+
+#Panagiotis {
+    background: url("Eikones/wood.jpg") no-repeat;
+    float:left;
+    padding:55px;
+    text-align: center;
+    width:41%;
+    border: black 3px solid;
+}
+
+img.mikos {
+    width:100%;
+    border: #54528c 3px solid;
+}
+
+footer {
+    background: #0d1828;
+    color: white;
+    float:left; 
+    height:border-box;
+    width:100%; 
+    text-align: center;
+}
+
+#TAlex {
+    background: #38a02e;
+    margin: 0px;
+    border: #54528c 2px solid;
+    width: 100.3%;
+}
+
+#TPana {
+    background: #38a02e;
+    margin: 0px;
+    border: #54528c 2px solid;
+    width: 100.3%;
+}
+
+div.Periexomena {
+    margin: 1%;
+    padding: 1%;
     
-    padding: 40px;
+}
