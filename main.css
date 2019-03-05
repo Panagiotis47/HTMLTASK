@@ -22,6 +22,7 @@
     animation-name: Xeretismos;
     animation-duration: 10s;
 	-webkit-animation-duration: 3s;
+    text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
 
 #paragrafos1 {
@@ -33,6 +34,7 @@ header {
         padding-top: 20px;
         height: border-box;
         min-height:70px;
+        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 5);
     }
 
 #Titlos2 {
@@ -133,8 +135,8 @@ footer {
 .hyperlink {
     list-style-type: none;
     float: right;
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     right: 0px;
     top:35px;
     min-width: 620px;
@@ -142,13 +144,13 @@ footer {
     margin: -5px ;
 }
 
-li {
+.hyperlink li {
     display: inline-block;
-    padding: 2px;
+    padding: 3px;
 }
 
 div.Periexomena2 {
-    margin:0px;
+    margin:auto;
     overflow: hidden;
     width:98%;
 }
@@ -160,6 +162,7 @@ header a {
     border: 1px solid transparent;
     background-color: #0d1c38;
     transition: 1.5s ease;
+    box-shadow: 0px 1px 8px #6691f4;
     
 }
 
@@ -203,4 +206,38 @@ header a:hover {
 
 .graphics:hover {
     transform: scale(1.02);
+}
+
+@media only screen and (max-width:1350px) {
+    .Periexomena2,.hyperlink{
+        padding: 40px;
+        float: none;
+        left: 5%;
+  }
+}
+
+@media only screen and (max-width:800px) {
+    .hyperlink{
+        width: 800px;
+        left: 5%;    
+    }
+}
+
+html {
+    min-width: 850px;
+    min-height: 100%;
+}
+
+#Titlos3 {
+    font-size: 35px;
+    color: whitesmoke;
+    text-align: left;
+    float: left;
+    left: 80px;
+    top: -8px;
+    margin: 20px;
+    font-family:"Palatino Linotype" ,Trattatello, fantasy;
+    min-width: 750px;
+    position: absolute;
+    text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
