@@ -74,7 +74,7 @@ header {
 
 .mikos1 {
     width:100%;
-    border: #54528c 3px solid;
+    border: #3A1809 3px solid;
     min-width: 280px;
     overflow: hidden;
 }
@@ -85,7 +85,7 @@ header {
 
 .mikos2 {
     width:100%;
-    border: #54528c 3px solid;
+    border: #3A1809 3px solid;
     min-width: 280px;
     overflow: hidden;
     transition: transform 2s;
@@ -104,18 +104,20 @@ footer {
 }
 
 #TAlex {
-    background: #38a02e;
+    background: #4c0507;
     margin: 0px;
-    border: #54528c 2px solid;
-    width: 100.3%;
-    animation: slide 20s infinite;
+    border: #3A1809 2px solid;
+    width: 100%;
+    border-bottom-color: transparent;
 }
 
 #TPana {
-    background: #38a02e;
+    background: #755353;
     margin: 0px;
-    border: #54528c 2px solid;
-    width: 100.3%;
+    border: #3A1809 2px solid;
+    width: 100%;
+    border-bottom-color: transparent;
+    
 }
 
 .Periexomena {
@@ -125,6 +127,7 @@ footer {
     float: left;
     display: -webkit-flex;
     display: flex;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 2);
 }
 
 .hyperlink {
@@ -190,4 +193,14 @@ header a:hover {
     to {
 	-webkit-transform:scale(1);
     }
+}
+
+.graphics {
+    color: #a06d08;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.45);
+    transition: transform 2s;
+}
+
+.graphics:hover {
+    transform: scale(1.02);
 }
