@@ -27,7 +27,7 @@
 }
 
 header {
-        background-color: #292d33;
+        background-color: #2A2A2A;
         padding-top: 20px;
         height: border-box;
         min-height:70px;
@@ -62,11 +62,15 @@ header {
     width:49%;
     border: black 3px solid;
     margin-left: 10px;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
 img.mikos {
     width:100%;
     border: #54528c 3px solid;
+    min-width: 300px;
 }
 
 footer {
@@ -89,13 +93,16 @@ footer {
     background: #38a02e;
     margin: 0px;
     border: #54528c 2px solid;
-    width: 100.4%;
+    width: 100.3%;
 }
 
 .Periexomena {
     margin: 10px;
     padding: 10px;
     overflow: auto;
+    float: left;
+    display: -webkit-flex;
+    display: flex;
     
 }
 
@@ -140,4 +147,17 @@ header a:hover {
 
 * {
     box-sizing: border-box;
+}
+
+@media only screen and (max-width:1000px) {
+    header, nav, section, footer{
+        width: 100%;
+  }
+}
+
+
+.Periexomena:after {
+  content: "";
+  display: table;
+  clear: both;
 }
