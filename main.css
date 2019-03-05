@@ -9,14 +9,14 @@
 }
 
 #Titlos1 {
-    font-size: 50px;
+    font-size: 35px;
     color: whitesmoke;
     text-align: left;
     float: left;
-    left: 35px;
-    top: -20px;
+    left: 6px;
+    top: -8px;
     margin: 20px;
-    font-family:Trattatello, fantasy;
+    font-family:"Palatino Linotype" ,Trattatello, fantasy;
     min-width: 750px;
     position: absolute;
     
@@ -70,7 +70,7 @@ header {
 img.mikos {
     width:100%;
     border: #54528c 3px solid;
-    min-width: 300px;
+    min-width: 280px;
 }
 
 footer {
