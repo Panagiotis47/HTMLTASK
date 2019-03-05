@@ -19,7 +19,9 @@
     font-family:"Palatino Linotype" ,Trattatello, fantasy;
     min-width: 750px;
     position: absolute;
-    
+    animation-name: Xeretismos;
+    animation-duration: 10s;
+	-webkit-animation-duration: 3s;
 }
 
 #paragrafos1 {
@@ -51,6 +53,8 @@ header {
     width:49%;
     border: black 3px solid;
     margin-right: 10px;
+    overflow: hidden;
+    transition: transform 2s;
 }
 
 #Panagiotis {
@@ -62,17 +66,34 @@ header {
     width:49%;
     border: black 3px solid;
     margin-left: 10px;
-    -webkit-flex: 1;
-    -ms-flex: 1;
     flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+    transition: transform 2s;
 }
 
-img.mikos {
+.mikos1 {
     width:100%;
     border: #54528c 3px solid;
     min-width: 280px;
+    overflow: hidden;
 }
 
+#Alex:hover{
+    transform: scale(1.02);
+}
+
+.mikos2 {
+    width:100%;
+    border: #54528c 3px solid;
+    min-width: 280px;
+    overflow: hidden;
+    transition: transform 2s;
+}
+
+#Panagiotis:hover{
+    transform: scale(1.02);
+}
 footer {
     background: #0d1828;
     color: white;
@@ -87,6 +108,7 @@ footer {
     margin: 0px;
     border: #54528c 2px solid;
     width: 100.3%;
+    animation: slide 20s infinite;
 }
 
 #TPana {
@@ -103,7 +125,6 @@ footer {
     float: left;
     display: -webkit-flex;
     display: flex;
-    
 }
 
 .hyperlink {
@@ -160,4 +181,13 @@ header a:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+@keyframes Xeretismos{
+    from {
+        -webkit-transform:scale(0);
+    }
+    to {
+	-webkit-transform:scale(1);
+    }
 }
