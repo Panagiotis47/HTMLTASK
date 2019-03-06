@@ -5,15 +5,14 @@
     font-family: Georgia, serif;
     margin: 0%;
     padding: 0%;
-    
 }
 
 #Titlos1 {
-    font-size: 35px;
+    font-size: 30px;
     color: whitesmoke;
     text-align: left;
     float: left;
-    left: 6px;
+    left: 31px;
     top: -8px;
     margin: 20px;
     font-family:"Palatino Linotype" ,Trattatello, fantasy;
@@ -186,14 +185,14 @@ header a:hover {
     }
 }
 
-.graphics , .Εφέ {
+.graphics {
     color: #ffa21e;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
 }
 
 .graphics:hover, .graphics1:hover , .graphics2:hover ,
-.Εφέ:hover, .Εφέ1:hover , .Εφέ2:hover {
+ .TitlosGnosis:hover {
     transform: scale(1.02);
     text-shadow: 0.5px 0.5px #ffd891;
 }
@@ -232,14 +231,8 @@ html {
     text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
 
-.graphics1 , .Εφέ1 {
+.graphics1 {
     color: #ff9b0f;
-    box-shadow: 1px 2px 8px black;
-    transition: transform 2s;
-}
-
-.graphics2 , Εφέ2 {
-    color: #f28d00;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
 }
@@ -278,6 +271,28 @@ html {
  }
  
  .ListaGnosis {
-     
+    color: #f28d00;
+    box-shadow: 1px 2px 8px black;
+    transition: transform 2s;
+    list-style-type:none;
+    text-decoration: underline;
  }
  
+ .TitlosGnosis {
+    color: #f28d00;
+    box-shadow: 1px 2px 8px black;
+    transition: transform 2s;
+ }
+ 
+ .TitlosEikonas{
+     float: left;
+     position: absolute;
+     top: 10px;
+     animation:giro 5s;
+ }
+ 
+@-webkit-keyframes giro {
+    100% { 
+        -webkit-transform: rotate(360deg); 
+    } 
+}
