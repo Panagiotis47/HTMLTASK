@@ -26,20 +26,22 @@
 }
 
 header {
-        background-color: #2A2A2A;
         padding-top: 20px;
         height: border-box;
         min-height:70px;
-        box-shadow: 0 1px 8px 0 #000005;
+        box-shadow: 0 1px 8px 2px black;
+        background: url("Eikones/header.jpg") no-repeat;
+        background-size: 100% 100%;
+        filter: saturate(1);
     }
 
 #Titlos2 {
     text-align: center;
+    color: #479992;
 }
 
 #Kouti {
     margin-top: 20px; 
-    padding: -10px;
 }
 
 #Alex {
@@ -64,9 +66,6 @@ header {
     width:49%;
     border: black 3px solid;
     margin-left: 10px;
-    flex: 1;
-        -webkit-flex: 1;
-        -ms-flex: 1;
     transition: transform 2s;
 }
 
@@ -172,13 +171,6 @@ header a:hover {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width:1000px) {
-    header, nav, section, footer{
-        width: 100%;
-  }
-}
-
-
 .Periexomena:after {
   content: "";
   display: table;
@@ -194,13 +186,14 @@ header a:hover {
     }
 }
 
-.graphics {
+.graphics , .Εφέ {
     color: #ffa21e;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
 }
 
-.graphics:hover, .graphics1:hover , .graphics2:hover{
+.graphics:hover, .graphics1:hover , .graphics2:hover ,
+.Εφέ:hover, .Εφέ1:hover , .Εφέ2:hover {
     transform: scale(1.02);
     text-shadow: 0.5px 0.5px #ffd891;
 }
@@ -239,13 +232,13 @@ html {
     text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
 
-.graphics1 {
+.graphics1 , .Εφέ1 {
     color: #ff9b0f;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
 }
 
-.graphics2 {
+.graphics2 , Εφέ2 {
     color: #f28d00;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
@@ -279,3 +272,12 @@ html {
       opacity:1 ;
   }
  }
+ 
+ .Gnosis {
+     
+ }
+ 
+ .ListaGnosis {
+     
+ }
+ 

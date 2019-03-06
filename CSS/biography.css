@@ -1,0 +1,48 @@
+#Perioxi {
+    background: url("../Eikones/background_biography.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+ }
+ 
+ .Προφίλ img{
+    width: 400px;
+ }
+ 
+ .Προφίλ {
+     float: left;
+     margin: 30px;
+     margin-left: 100px;
+     margin-top: 0px;
+ }
+ 
+ #PinakasP , #AlexandrosP{
+     width: 45%;
+     height: 40%;
+     float: left;
+     margin: 30px;
+     margin-left: 100px;
+     border: 2.5px solid black;
+     border-collapse: collapse;
+     background-color: whitesmoke;
+ }
+ 
+ #PinakasP th , #PinakasP td ,
+ #AlexandrosP th , #AlexandrosP td {
+     border: 0.8px solid black;
+     padding: 8px;
+     
+ }
+ 
+ .BioTitlos {
+    text-align: center;
+    width: 58%;
+ }
+ .BioTitlos1 {
+    text-align: center;
+    width: 100%;
+ }
+ 
