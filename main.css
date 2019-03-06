@@ -25,16 +25,12 @@
     text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
 
-#paragrafos1 {
-    text-align: center;
-}
-
 header {
         background-color: #2A2A2A;
         padding-top: 20px;
         height: border-box;
         min-height:70px;
-        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 5);
+        box-shadow: 0 1px 8px 0 #000005;
     }
 
 #Titlos2 {
@@ -199,13 +195,14 @@ header a:hover {
 }
 
 .graphics {
-    color: #a06d08;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.45);
+    color: #ffa21e;
+    box-shadow: 1px 2px 8px black;
     transition: transform 2s;
 }
 
-.graphics:hover {
+.graphics:hover, .graphics1:hover , .graphics2:hover{
     transform: scale(1.02);
+    text-shadow: 0.5px 0.5px #ffd891;
 }
 
 @media only screen and (max-width:1350px) {
@@ -241,3 +238,44 @@ html {
     position: absolute;
     text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
+
+.graphics1 {
+    color: #ff9b0f;
+    box-shadow: 1px 2px 8px black;
+    transition: transform 2s;
+}
+
+.graphics2 {
+    color: #f28d00;
+    box-shadow: 1px 2px 8px black;
+    transition: transform 2s;
+}
+
+ .Ellada img , .Komotini img{ 
+    display:none; 
+    -webkit-animation: ArgiFortosi 1s;
+    animation: ArgiFortosi 5s;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+ }
+ .Ellada:hover img , .Komotini:hover img { 
+    display:block; 
+    width: 270px;
+    position: relative;
+ }
+ 
+ .Ellada , .Komotini{
+    color:#e0f900;
+    text-shadow: 1px 1px 8px #fdffed;
+    
+ }
+ 
+ @keyframes ArgiFortosi {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity:1 ;
+  }
+ }
