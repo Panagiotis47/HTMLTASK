@@ -1,9 +1,25 @@
 .Diorfosi {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     min-width: 900px;
 }
 
 .TitlosProject {
 	text-align: center;
+        margin-top: 110px;
+        font-size: 35px;
 }
+
+body {
+    background: url("../Eikones/proj.jpeg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+#Kouti {
+    background-color: rgba(104, 26, 50,0.75);;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
