@@ -19,8 +19,9 @@
     min-width: 750px;
     position: absolute;
     animation-name: Xeretismos;
-    animation-duration: 10s;
-	-webkit-animation-duration: 3s;
+    animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        -moz-animation-duration: 3s;
     text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
 
@@ -39,18 +40,13 @@ header {
     color: #479992;
 }
 
-#Kouti {
-    margin-top: 20px; 
-}
-
 #Alex {
     background: url("Eikones/wood.jpg") no-repeat;
     background-size: 100% 100%;
-    float:left;
     padding:55px;
     text-align: center;
     width:49%;
-    border: black 3px solid;
+    border: 3px solid black;
     margin-right: 10px;
     overflow: hidden;
     transition: transform 2s;
@@ -59,11 +55,10 @@ header {
 #Panagiotis {
     background: url("Eikones/wood.jpg") no-repeat;
     background-size: 100% 100%;
-    float:left;
     padding:55px;
     text-align: center;
     width:49%;
-    border: black 3px solid;
+    border: 3px solid black;
     margin-left: 10px;
     transition: transform 2s;
 }
@@ -72,7 +67,6 @@ header {
     width:100%;
     border: #3A1809 3px solid;
     min-width: 280px;
-    overflow: hidden;
 }
 
 #Alex:hover{
@@ -83,8 +77,6 @@ header {
     width:100%;
     border: #3A1809 3px solid;
     min-width: 280px;
-    overflow: hidden;
-    transition: transform 2s;
 }
 
 #Panagiotis:hover{
@@ -179,9 +171,11 @@ header a:hover {
 @keyframes Xeretismos{
     from {
         -webkit-transform:scale(0);
+        -moz-transform:scale(0);
     }
     to {
 	-webkit-transform:scale(1);
+        -moz-transform:scale(1);
     }
 }
 
@@ -191,8 +185,7 @@ header a:hover {
     transition: transform 2s;
 }
 
-.graphics:hover, .graphics1:hover , .graphics2:hover ,
- .TitlosGnosis:hover {
+.graphics:hover, .graphics1:hover , .TitlosGnosis:hover {
     transform: scale(1.02);
     text-shadow: 0.5px 0.5px #ffd891;
 }
@@ -239,8 +232,9 @@ html {
 
  .Ellada img , .Komotini img{ 
     display:none; 
-    -webkit-animation: ArgiFortosi 1s;
-    animation: ArgiFortosi 5s;
+    animation-name: ArgiFortosi;
+        -webkit-animation-duration: 4s;
+        -moz-animation-duration: 4s;
     position: absolute;
     top: 50%;
     left: 24%;
@@ -262,8 +256,8 @@ html {
       opacity: 0;
   }
   to {
-      opacity:1 ;
-  }
+      opacity: 1;
+    }
  }
 
  .ListaGnosis {
@@ -284,11 +278,16 @@ html {
      float: left;
      position: absolute;
      top: 10px;
-     animation:giro 5s;
+     animation-name: giro;
+     animation-duration: 4s;
+        -webkit-animation-duration: 4s;
+        -moz-animation-duration: 4s;
+     
  }
  
-@-webkit-keyframes giro {
+@keyframes giro {
     100% { 
-        -webkit-transform: rotate(360deg); 
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg); 
     } 
 }
