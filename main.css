@@ -1,4 +1,4 @@
-﻿body {
+body {
     background: url("Eikones/Background.jpg") no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -7,7 +7,51 @@
     padding: 0%;
 }
 
-#Titlos1 {
+html {
+    min-width: 850px;
+    min-height: 100%;
+}
+
+header {
+    background: url("Eikones/header.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 20px;
+    min-height:70px;
+    box-shadow: 0 1px 8px 2px black;
+    box-sizing: border-box;
+    filter: saturate(1);
+}
+    
+footer {
+    background: #0d1828;
+    color: white;
+    float:left; 
+    height:border-box;
+    width:100%; 
+    text-align: center;
+}
+
+/*-----------------------<Επικεφαλίδα Του HTML>-------------------------------*/
+
+.Λογότυπο_Εικόνας{
+     float: left;
+     position: absolute;
+     top: 10px;
+     animation-name: Κυκλικό_Λογότυπο_360;
+     animation-duration: 4s;
+        -webkit-animation-duration: 4s;
+        -moz-animation-duration: 4s;
+     
+ }
+ 
+@keyframes Κυκλικό_Λογότυπο_360 {
+    100% { 
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg); 
+    } 
+}
+
+#Επικεφαλής_Τίτλος_Αρχικής {
     font-size: 30px;
     color: whitesmoke;
     text-align: left;
@@ -18,107 +62,25 @@
     font-family:"Palatino Linotype" ,Trattatello, fantasy;
     min-width: 750px;
     position: absolute;
-    animation-name: Xeretismos;
+    animation-name: Αναδυόμενος_Τίτλος_Καλωσορίσματος;
     animation-duration: 3s;
         -webkit-animation-duration: 3s;
         -moz-animation-duration: 3s;
     text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
 }
 
-header {
-        padding-top: 20px;
-        height: border-box;
-        min-height:70px;
-        box-shadow: 0 1px 8px 2px black;
-        background: url("Eikones/header.jpg") no-repeat;
-        background-size: 100% 100%;
-        filter: saturate(1);
+@keyframes Αναδυόμενος_Τίτλος_Καλωσορίσματος{
+    from {
+        -webkit-transform:scale(0);
+        -moz-transform:scale(0);
     }
-
-#Titlos2 {
-    text-align: center;
-    color: #479992;
+    to {
+	-webkit-transform:scale(1);
+        -moz-transform:scale(1);
+    }
 }
 
-#Alex {
-    background: url("Eikones/wood.jpg") no-repeat;
-    background-size: 100% 100%;
-    padding:55px;
-    text-align: center;
-    width:49%;
-    border: 3px solid black;
-    margin-right: 10px;
-    overflow: hidden;
-    transition: transform 2s;
-}
-
-#Panagiotis {
-    background: url("Eikones/wood.jpg") no-repeat;
-    background-size: 100% 100%;
-    padding:55px;
-    text-align: center;
-    width:49%;
-    border: 3px solid black;
-    margin-left: 10px;
-    transition: transform 2s;
-}
-
-.mikos1 {
-    width:100%;
-    border: #3A1809 3px solid;
-    min-width: 280px;
-}
-
-#Alex:hover{
-    transform: scale(1.02);
-}
-
-.mikos2 {
-    width:100%;
-    border: #3A1809 3px solid;
-    min-width: 280px;
-}
-
-#Panagiotis:hover{
-    transform: scale(1.02);
-}
-footer {
-    background: #0d1828;
-    color: white;
-    float:left; 
-    height:border-box;
-    width:100%; 
-    text-align: center;
-}
-
-#TAlex {
-    background: #4c0507;
-    margin: 0px;
-    border: #3A1809 2px solid;
-    width: 100%;
-    border-bottom-color: transparent;
-}
-
-#TPana {
-    background: #755353;
-    margin: 0px;
-    border: #3A1809 2px solid;
-    width: 100%;
-    border-bottom-color: transparent;
-    
-}
-
-.Periexomena {
-    margin: 10px;
-    padding: 10px;
-    overflow: auto;
-    float: left;
-    display: -webkit-flex;
-    display: flex;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 2);
-}
-
-.hyperlink {
+.Υπερσίδεσμη_Επικεφαλίδας {
     list-style-type: none;
     float: right;
     margin:0px;
@@ -130,18 +92,12 @@ footer {
     margin: -5px ;
 }
 
-.hyperlink li {
+.Υπερσίδεσμη_Επικεφαλίδας li {
     display: inline-block;
     padding: 3px;
 }
 
-div.Periexomena2 {
-    margin:auto;
-    overflow: hidden;
-    width:98%;
-}
-
-header a {
+.Υπερσίδεσμη_Επικεφαλίδας a {
     text-decoration: none;
     color: #ffffff;
     padding: 5px 18px;
@@ -149,49 +105,16 @@ header a {
     background-color: #0d1c38;
     transition: 1.5s ease;
     box-shadow: 0px 1px 8px #6691f4;
-    
 }
 
-header a:hover {
+.Υπερσίδεσμη_Επικεφαλίδας a:hover {
     background-color: #515c70;
     color: red;
     border: 2px solid #53617a;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-.Periexomena:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@keyframes Xeretismos{
-    from {
-        -webkit-transform:scale(0);
-        -moz-transform:scale(0);
-    }
-    to {
-	-webkit-transform:scale(1);
-        -moz-transform:scale(1);
-    }
-}
-
-.graphics {
-    color: #ffa21e;
-    box-shadow: 1px 2px 8px black;
-    transition: transform 2s;
-}
-
-.graphics:hover, .graphics1:hover , .TitlosGnosis:hover {
-    transform: scale(1.02);
-    text-shadow: 0.5px 0.5px #ffd891;
-}
-
 @media only screen and (max-width:1350px) {
-    .Periexomena2,.hyperlink{
+    .Δοχείο_Επικεφαλίδας,.Υπερσίδεσμη_Επικεφαλίδας{
         padding: 40px;
         float: none;
         left: 5%;
@@ -199,95 +122,149 @@ header a:hover {
 }
 
 @media only screen and (max-width:800px) {
-    .hyperlink{
+    .Υπερσίδεσμη_Επικεφαλίδας{
         width: 800px;
         left: 5%;    
     }
 }
 
-html {
-    min-width: 850px;
-    min-height: 100%;
+/*---------------------<Ενότητα του HTML>-------------------------------------*/
+
+#Τίτλος_Ενότητας {
+    text-align: center;
+    color: #479992;
 }
 
-#Titlos3 {
-    font-size: 35px;
-    color: whitesmoke;
-    text-align: left;
+.Δοχείο_Των_Προφίλ {
+    margin: 10px;
+    padding: 10px;
     float: left;
-    left: 80px;
-    top: -8px;
-    margin: 20px;
-    font-family:"Palatino Linotype" ,Trattatello, fantasy;
-    min-width: 750px;
-    position: absolute;
-    text-shadow: 2px 2px 8px #0d91d8,2px 2px 8px #354f8c;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 2);
 }
 
-.graphics1 {
+#Προφίλ_Αλέξανδρου_Μαγδαλά {
+    background: url("Eikones/wood.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding:55px;
+    text-align: center;
+    width:49%;
+    border: 3px solid black;
+    margin-right: 10px;
+    overflow: hidden;
+    transition: transform 2s;
+}
+
+#Προφίλ_Αλέξανδρου_Μαγδαλά:hover{
+    transform: scale(1.02);
+}
+
+#Προφίλ_Παναγιώτη_Τσακρίδη {
+    background: url("Eikones/wood.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding:55px;
+    text-align: center;
+    width:49%;
+    border: 3px solid black;
+    margin-left: 10px;
+    transition: transform 2s;
+}
+
+#Προφίλ_Παναγιώτη_Τσακρίδη:hover{
+    transform: scale(1.02);
+}
+
+#Τίτλος_Προφίλ_Αλέξανδρου_Μαγδαλά {
+    background: #4c0507;
+    margin: 0px;
+    border: #3A1809 2px solid;
+    width: 100%;
+    border-bottom-color: transparent;
+}
+
+#Τίτλος_Προφίλ_Παναγιώτη_Τσακρίδη {
+    background: #755353;
+    margin: 0px;
+    border: #3A1809 2px solid;
+    width: 100%;
+    border-bottom-color: transparent;
+}
+
+.Εικόνα_Προφίλ_Αλέξανδρου_Μαγδαλά {
+    width:100%;
+    border: #3A1809 3px solid;
+    min-width: 280px;
+}
+
+.Εικόνα_Προφίλ_Παναγιώτη_Τσακρίδη {
+    width:100%;
+    border: #3A1809 3px solid;
+    min-width: 280px;
+}
+
+.Προγραμματιστές_Της_Εταιρείας {
+    color: #ffa21e;
+    box-shadow: 1px 2px 8px black;
+    transition: transform 2s;
+}
+
+.Τόπος_Καταγωγής {
     color: #ff9b0f;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
 }
 
- .Ellada img , .Komotini img{ 
-    display:none; 
-    animation-name: ArgiFortosi;
-        -webkit-animation-duration: 4s;
-        -moz-animation-duration: 4s;
-    position: absolute;
-    top: 50%;
-    left: 24%;
- }
- .Ellada:hover img , .Komotini:hover img { 
-    display:block; 
-    width: 270px;
-    position: relative;
- }
- 
- .Ellada , .Komotini{
-    color:#e0f900;
-    text-shadow: 1px 1px 8px #fdffed;
-    
- }
- 
- @keyframes ArgiFortosi {
-  from {
-      opacity: 0;
-  }
-  to {
-      opacity: 1;
+    .Εικόνα_Ελλάδας , .Εικόνα_Κομοτηνής{
+        color:#e0f900;
+        text-shadow: 1px 1px 8px #fdffed;   
     }
- }
+    
+    .Εικόνα_Ελλάδας img , .Εικόνα_Κομοτηνής img { 
+        display:none; 
+        animation-name: Αδιαφάνεια_Εικόνες_Καταγωγής;
+            -webkit-animation-duration: 4s;
+            -moz-animation-duration: 4s;
+        position: absolute;
+        top: 50%;
+        left: 24%;
+    }
+    
+    .Εικόνα_Ελλάδας:hover img , .Εικόνα_Κομοτηνής:hover img { 
+        display:block; 
+        width: 270px;
+        position: relative;
+    }
+    
+    @keyframes Αδιαφάνεια_Εικόνες_Καταγωγής {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 
- .ListaGnosis {
+.Γνώσεις_Στον_Προγραμματισμό {
+    color: #f28d00;
+    box-shadow: 1px 2px 8px black;
+    transition: transform 2s;
+}
+ 
+.Λίστα_Γνώσεις_Στον_Προγραμματισμό {
     color: #f28d00;
     box-shadow: 1px 2px 8px black;
     transition: transform 2s;
     list-style-type:none;
     text-decoration: underline;
- }
- 
- .TitlosGnosis {
-    color: #f28d00;
-    box-shadow: 1px 2px 8px black;
-    transition: transform 2s;
- }
- 
- .TitlosEikonas{
-     float: left;
-     position: absolute;
-     top: 10px;
-     animation-name: giro;
-     animation-duration: 4s;
-        -webkit-animation-duration: 4s;
-        -moz-animation-duration: 4s;
-     
- }
- 
-@keyframes giro {
-    100% { 
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg); 
-    } 
 }
+
+.Προγραμματιστές_Της_Εταιρείας:hover , 
+.Τόπος_Καταγωγής:hover , 
+.Γνώσεις_Στον_Προγραμματισμό:hover {
+    transform: scale(1.02);
+    text-shadow: 0.5px 0.5px #ffd891;
+}
+ 
+/*--------------------------<Τέλος>-------------------------------------------*/

@@ -1,4 +1,4 @@
-#Perioxi {
+section {
     background: url("../Eikones/background_biography.jpg") no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -8,43 +8,50 @@
     margin-right: 50px;
  }
  
- .Προφίλ img{
+.Εικόνες_Προφίλ {
+    float: left;
+    margin: 30px;
+    margin-left: 100px;
+    margin-top: -20px;
+}
+ 
+.Εικόνες_Προφίλ img{
     width: 380px;
     height: 240px;
     border: 3px solid black;
+}
+ 
+#Πίνακας_Στοιχείων_Παναγιώτη_Τσακρίδη , #Πίνακας_Στοιχείων_Αλέξανδρου_Μαγδαλά {
+    width: 45%;
+    height: 40%;
+    float: left;
+    margin: 25px;
+    margin-left: 100px;
+    border: 2.5px solid black;
+    border-collapse: collapse;
+    background-color: #d5dce8;
  }
  
- .Προφίλ {
-     float: left;
-     margin: 30px;
-     margin-left: 100px;
-     margin-top: -20px;
+#Πίνακας_Στοιχείων_Παναγιώτη_Τσακρίδη th , #Πίνακας_Στοιχείων_Παναγιώτη_Τσακρίδη td ,
+#Πίνακας_Στοιχείων_Αλέξανδρου_Μαγδαλά th , #Πίνακας_Στοιχείων_Αλέξανδρου_Μαγδαλά td {
+    border: 0.8px solid black;
+    padding: 8px;  
  }
  
- #PanagiotisP , #AlexandrosP{
-     width: 45%;
-     height: 40%;
-     float: left;
-     margin: 25px;
-     margin-left: 100px;
-     border: 2.5px solid black;
-     border-collapse: collapse;
-     background-color: #d5dce8;
- }
- 
- #PanagiotisP th , #PanagiotisP td ,
- #AlexandrosP th , #AlexandrosP td {
-     border: 0.8px solid black;
-     padding: 8px;
-     
- }
- 
- .BioTitlos {
+.Σπουδές_Βιογραφικού {
     text-align: center;
     width: 58%;
  }
- .BioTitlos1 {
+ 
+.Σεμινάρια_Βιογραφικού {
     text-align: center;
     width: 100%;
  }
  
+ @media only screen and (max-width:1290px) {
+    .Σπουδές_Βιογραφικού, .Σεμινάρια_Βιογραφικού{
+        display: inline-table;
+        display: -webkit-inline-table;
+        display: -moz-inline-table;
+    }
+ }

@@ -1,43 +1,43 @@
-.TitlosEpikinonias {
+footer {
+    position: fixed;
+    bottom: 0px;
+    min-width: 900px;
+}
+
+.Φόρουμ_Επικοινωνιας {
     text-align: center;
     font-size: 25px;
     color: #e8e819;
 }
-.Kelithos {
-  position: absolute;
+.Πίνακας_Του_Φόρουμ {
+  position: initial;
   width: 100%;
   padding-left: 20px;
   padding-right: 0px;
   min-width: 600px;
 }
 
-#Diorfosi {
-    position: absolute;
-    bottom: 0px;
-    min-width: 900px;
-}
-
-.Periexomena_Kelithou {
+.Περιεχόμενα_Του_Φόρουμ {
   display: flex;
   max-width: 650px;
   margin: 0 auto;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0,0.7);
   padding: 30px;
   box-shadow: 0 0 10px black;
   
 }
 
-.Isodi {
+.Είσοδοι_Στοιχείων_Φόρουμ {
   display: flex;
   flex-direction: column;
   margin-right: 6%;
 }
 
-.Isodi , .minima {
+.Είσοδοι_Στοιχείων_Φόρουμ , .Περιοχή_Κειμένου_Φόρουμ {
   width: 50%;
 }
 
-.Eisagogi , .minima textarea{
+.Είσοδοι_Εισαγωγής , .Περιοχή_Κειμένου_Φόρουμ textarea{
   margin: 5px 0;
   background: transparent;
   border: 0px;
@@ -47,11 +47,11 @@
   width: 100%;
 }
 
-.minima textarea {
+.Περιοχή_Κειμένου_Φόρουμ textarea {
     height: 259.2px;
 }
 
-.Koumpi {
+.Κουμπί_Αποστολής_Φόρουμ {
     background: #39b7dd;
     padding: 15px;
     border-radius: 55px;
